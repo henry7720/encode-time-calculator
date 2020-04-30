@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Calculate Remaining Time on Encode</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="time-remaining-form" autocomplete="off" action="javascript:;">
+      <p>Time in input:</p>
+      <input id="number-of-hours-in-input" type="text" maxlength="2000" placeholder="hh" value="0">
+      <label for="number-of-minutes-in-input">:</label>
+      <input id="number-of-minutes-in-input" type="text" maxlength="2000" placeholder="mm">
+      <label for="number-of-seconds-in-input">:</label>
+      <input id="number-of-seconds-in-input" type="text" maxlength="2000" placeholder="ss">
+      <p>Time elapsed encoding:</p>
+      <input id="number-of-hours-elapsed" type="text" maxlength="2000" placeholder="hh" value="0">
+      <label for="number-of-minutes-elapsed">:</label>
+      <input id="number-of-minutes-elapsed" type="text" maxlength="2000" placeholder="mm">
+      <label for="number-of-seconds-elapsed">:</label>
+      <input id="number-of-seconds-elapsed" type="text" maxlength="2000" placeholder="ss">
+      <p>Speed multiplier:</p>
+      <input id="speed-multiplier" type="text" maxlength="2000" placeholder="x">
+      <br>
+      <br>
+      <input type="submit" value="Calculate">
+    </form>
+    <p id="calculated-time-remaining-output">Please fill in the form to see how many hours (or days) it will take!</p>
+    <script src="calculator.js"></script>
+  </body>
+</html>
